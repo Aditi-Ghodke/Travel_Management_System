@@ -1,0 +1,61 @@
+PART 2
+Login class
+- in the main class create an object of the class [ Login l = new Login();] here 'l' is the refernce var where we want our object to be stored so that it can be used in the future. We can also write new Login() <-- this is called ANONYMOUS OBJECT in JAVA.
+-create a frame using 
+	--> setSize(400,400);setLocation(400,200);
+extend the JFrame class, import the swing package present in extended version of java.
+
+-by default frame is hidden make it visible 
+	-->setVisible(true);
+
+-to  divide the frame into 2 parts we use panel. Create an object of the panel and add on the frame using
+	--> JPanel p1 = new JPanel();add(p1);
+
+- we want to add the panel only to the 1st half of the frame. We use the concept of LAYOUT here(how we want to place out components on our frmae that is why we use LAYOUT). 
+There are 2 types of LAYOUTS -> DEFAULT(BORDER LAYOUT -> with the help of BODER LAYOUT we can place our elements on the left,right/margin, bottom, top,center)and we can CUSTOMIZE our LAYOUT.THAT IS WHY BY DEFAULT THE LAYOUT HAS BEEN APPLIED ON THE ENTIRE FRAME i.e THE PANEL.
+
+- now we don't  want to use the  layouts provided by swing the we can use/set 
+	--> setLayout(null);
+	--> p1.setBounds(0,0,400,400);// this takes 4 arguments 1st 2 are loaction and then the height an the width. Here 0,0 is passed as we want our layout to start from the panel and then th required ht and width.
+
+- set bg color as blue so create a class of color to pass the color in the form of RGB
+	--> p1.setBackground(new Color(131,193,233));
+
+-Add image to the frame create object of the image icon provide the path, scale the image. To add the image on the frame we need a JLabel object. 
+	Add the image on the frame using  image.setBounds(100,120,200,200);
+
+- p1.setLayout(null);// unless and until you don't set LAYOUT to NULL it will not call SETBOUNDS function.
+
+- for the right hand side create another panel p2.
+
+-getContentPane() : gives you the access of the entire panel.
+
+-ADD TEXT ON YOUR FRAME using frame using JLabel
+	--> JLabel lblusername = new JLabel("Username");
+        lblusername.setBounds(60,20,100,25);
+        p2.add(lblusername);
+	#to set the font size use
+		-->  lblusername.setFont(new Font("SAN_SERIF", Font.PLAIN, 20));/set font includes an object which accepts 3 args i.e font family,font  style and the size
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+4/18 Signup.java
+
+- create a frame we can also use setBounds function(which is the combination of set size and set location function) it accepts 4 args i.e location (1st 2 args) and next 2 args are the frame size.
+
+- getContentPane().setBackground(Color.WHITE);
+	for color import the awt pacakage o/w it will show error
+
+IMAGES
+WHEN YOU ADD YOUR IMAGE ON THE JLABEL. YOU CANNOT ADD YOUR IMAGE DIRECTLY YOU 1ST NEED TO CONVERT THE IMAGE TO IMAGE ICON AS JLABEL'S CONSTRUCTOR ACCEPTS AN OBJECT OF AN ICON BUT NOT OF AN IMAGE
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+VIDEO 18 
+
+
