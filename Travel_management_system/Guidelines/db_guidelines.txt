@@ -1,8 +1,0 @@
-- create class Conn
-- we are not going to create a main class here. We are just going to declare a constructor here
-  we are going to call this class/use this class by creating an object in other class and use 
-  this class.
-- THERE ARE 5 STEPS FOR JDBC CONNECTION
-	1) Register the driver(MySQL driver).First initialize the driver.
-	   there is a static method forName(). MySQL is an external entity not in the project so exception might occur. So need to handle    	   the exception using try and catch. 
-	2)
